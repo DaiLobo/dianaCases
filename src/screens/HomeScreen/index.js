@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Link from "../../components/Link";
 import { Image, Box, Text, Icon, Input, Button } from "../../theme/components";
 import { theme } from "../../theme/theme";
@@ -96,6 +98,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+      <Head>
+        <title>Home - Diana Cases Campanha</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
@@ -228,7 +233,7 @@ export default function HomeScreen() {
                       color: theme.colors.neutral["900"],
                     }}
                   >
-                    Alura Cases
+                    Diana Cases
                   </Text>
                   <Text
                     as="p"

@@ -1,6 +1,7 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as iconSet from "@fortawesome/free-solid-svg-icons";
+
+import React from "react";
 
 import { theme } from "./theme";
 
@@ -167,8 +168,6 @@ Box.defaultProps = {
 export function Icon({ as, styleSheet, ...props }) {
   const { iconVariant, ...restStyleSheet } = styleSheet;
   const styleSheetUpdated = restStyleSheet;
-
-  console.log("iconVariant", iconVariant);
 
   return (
     <Box
